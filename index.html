@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dra. Marcela Souza Cruz | Cirurgia Geral e Bariátrica em Volta Redonda</title>
+<meta name="description" content="Avaliação individualizada em Cirurgia Geral e Cirurgia Bariátrica. Converse com a equipe da Dra. Marcela Souza Cruz pelo WhatsApp e agende sua avaliação.">
+<meta name="theme-color" content="#123B46">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --petrol:#123B46;
+  --petrol-2:#0E2F38;
+  --offwhite:#F7F7F4;
+  --white:#FFFFFF;
+  --sage:#78958C;
+  --graphite:#263238;
+  --wa:#25D366;
+  --line:rgba(18,59,70,.12);
+  --radius:16px;
+  --shadow:0 1px 2px rgba(18,59,70,.04),0 8px 24px rgba(18,59,70,.05);
+  --header-h:88px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font-family:'Inter',system-ui,sans-serif;color:var(--graphite);background:var(--offwhite);line-height:1.7;font-size:17px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3,.num{font-family:'Manrope',system-ui,sans-serif;color:var(--petrol);line-height:1.12;letter-spacing:-.02em}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer}
+.container{width:min(1180px,100% - 40px);margin-inline:auto}
+section{padding:clamp(72px,10vw,128px) 0}
+.eyebrow{font-family:'Manrope',sans-serif;font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--sage);display:block;margin-bottom:20px}
+h2{font-size:clamp(1.9rem,4.2vw,3.1rem);font-weight:700;margin-bottom:24px;max-width:20ch}
+.lead{font-size:1.1rem;color:#4a585e;max-width:56ch}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:'Manrope',sans-serif;font-weight:700;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;padding:18px 28px;border-radius:999px;border:1px solid transparent;transition:transform .25s ease,box-shadow .25s ease,background .25s ease,color .25s ease;text-align:center;line-height:1.3}
+.btn:hover{transform:translateY(-2px)}
+.btn-wa{background:var(--wa);color:#06361b;box-shadow:0 8px 22px rgba(37,211,102,.28)}
+.btn-wa:hover{box-shadow:0 12px 28px rgba(37,211,102,.38)}
+.btn-petrol{background:var(--petrol);color:var(--white)}
+.btn-petrol:hover{background:var(--petrol-2)}
+.btn-ghost{border-color:var(--petrol);color:var(--petrol);background:transparent}
+.btn-ghost:hover{background:var(--petrol);color:#fff}
+.btn svg{width:20px;height:20px;flex:none}
+
+/* Header */
+header{position:fixed;inset:0 0 auto 0;z-index:50;background:rgba(247,247,244,.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid transparent;transition:all .3s ease}
+header .bar{height:var(--header-h);display:flex;align-items:center;justify-content:space-between;gap:24px;transition:height .3s ease}
+header.scrolled{border-color:var(--line);box-shadow:0 4px 18px rgba(18,59,70,.05)}
+header.scrolled .bar{height:64px}
+.brand{display:flex;flex-direction:column;line-height:1.2}
+.brand strong{font-family:'Manrope',sans-serif;font-size:1.05rem;color:var(--petrol);font-weight:800;letter-spacing:-.01em}
+.brand span{font-size:.78rem;color:var(--sage);font-weight:500}
+nav ul{display:flex;gap:34px;list-style:none}
+nav a{font-size:.9rem;font-weight:500;color:var(--graphite);position:relative;padding:6px 0}
+nav a::after{content:"";position:absolute;left:0;bottom:0;height:1px;width:0;background:var(--petrol);transition:width .3s ease}
+nav a:hover::after{width:100%}
+.header-cta{padding:13px 22px;font-size:.76rem}
+.burger{display:none;background:none;border:0;width:44px;height:44px;position:relative}
+.burger span,.burger span::before,.burger span::after{display:block;position:absolute;left:10px;width:24px;height:2px;background:var(--petrol);border-radius:2px;transition:.3s}
+.burger span{top:21px}
+.burger span::before{content:"";top:-7px;left:0}
+.burger span::after{content:"";top:7px;left:0}
+.burger[aria-expanded="true"] span{background:transparent}
+.burger[aria-expanded="true"] span::before{top:0;transform:rotate(45deg)}
+.burger[aria-expanded="true"] span::after{top:0;transform:rotate(-45deg)}
+
+/* Hero */
+.hero{padding-top:calc(var(--header-h) + 56px);padding-bottom:clamp(64px,8vw,110px)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(36px,6vw,88px);align-items:center}
+.hero h1{font-size:clamp(2.3rem,5.4vw,4.1rem);font-weight:800;margin-bottom:26px}
+.hero .sub{font-size:1.12rem;color:#4a585e;max-width:52ch;margin-bottom:34px}
+.doc-id{border-left:2px solid var(--sage);padding-left:18px;margin-bottom:36px}
+.doc-id strong{display:block;font-family:'Manrope',sans-serif;color:var(--petrol);font-size:1.05rem}
+.doc-id span{display:block;font-size:.9rem;color:#5b686e}
+.cta-note{margin-top:14px;font-size:.88rem;color:#5b686e}
+.photo{position:relative;border-radius:20px;overflow:hidden;background:linear-gradient(160deg,#dfe7e4,#c9d6d1);aspect-ratio:4/5;box-shadow:var(--shadow)}
+.photo img{width:100%;height:100%;object-fit:cover;position:relative;z-index:1}
+.photo .ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;color:var(--petrol);font-family:'Manrope',sans-serif;font-weight:600;text-align:center;padding:24px}
+.photo .ph svg{width:54px;height:54px;opacity:.55}
+.photo .ph small{font-family:'Inter';font-weight:400;font-size:.78rem;opacity:.7}
+.badge{position:absolute;z-index:2;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:14px;padding:14px 18px;box-shadow:var(--shadow);font-size:.8rem;line-height:1.4}
+.badge strong{display:block;font-family:'Manrope',sans-serif;color:var(--petrol);font-size:.95rem}
+.badge.b1{left:-18px;bottom:48px}
+.badge.b2{right:-14px;top:36px}
+.hero-photo{position:relative}
+
+/* Sobre */
+.about{background:var(--white)}
+.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(36px,6vw,96px);align-items:center}
+.about .photo{aspect-ratio:4/5}
+.about p{margin-bottom:18px;color:#3d4a50}
+.about p.key{font-family:'Manrope',sans-serif;font-size:1.25rem;font-weight:600;color:var(--petrol);line-height:1.45}
+.about .btn{margin-top:14px}
+
+/* Especialidades */
+.spec-head{margin-bottom:56px}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:32px 26px;display:flex;flex-direction:column;box-shadow:var(--shadow);transition:transform .3s ease,border-color .3s ease}
+.card:hover{transform:translateY(-4px);border-color:var(--sage)}
+.card .ico{width:44px;height:44px;margin-bottom:26px;color:var(--sage)}
+.card .ico svg{width:100%;height:100%}
+.card h3{font-size:1.3rem;margin-bottom:12px;font-weight:700}
+.card p{font-size:.97rem;color:#4a585e;margin-bottom:26px;flex:1}
+.card a{font-family:'Manrope',sans-serif;font-weight:700;font-size:.74rem;letter-spacing:.07em;text-transform:uppercase;color:var(--petrol);border-top:1px solid var(--line);padding-top:18px;display:flex;justify-content:space-between;gap:12px;align-items:center;line-height:1.4}
+.card a span{transition:transform .3s}
+.card a:hover span{transform:translateX(4px)}
+
+/* Bariátrica */
+.bari{background:var(--petrol);color:#fff}
+.bari h2,.bari .eyebrow{color:#fff}
+.bari .eyebrow{color:#a8c0b8}
+.bari-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(36px,6vw,88px);align-items:center}
+.bari p{color:rgba(255,255,255,.82);margin-bottom:18px;max-width:54ch}
+.bari .photo{background:linear-gradient(160deg,#1c4d59,#0e2f38);aspect-ratio:4/5}
+.bari .photo .ph{color:#cfe0da}
+.quote{margin:34px 0;padding:28px 30px;border-left:3px solid var(--sage);background:rgba(255,255,255,.06);border-radius:0 var(--radius) var(--radius) 0;font-family:'Manrope',sans-serif;font-size:clamp(1.1rem,2vw,1.35rem);font-weight:600;line-height:1.5;color:#fff}
+
+/* Como funciona */
+.how-top{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,88px);margin-bottom:64px;align-items:start}
+.questions{list-style:none;display:grid;gap:12px;margin:20px 0}
+.questions li{background:var(--white);border:1px solid var(--line);border-radius:12px;padding:16px 20px;font-family:'Manrope',sans-serif;font-weight:600;color:var(--petrol);font-size:.98rem}
+.timeline{display:grid;grid-template-columns:repeat(5,1fr);gap:0;position:relative;counter-reset:s}
+.timeline::before{content:"";position:absolute;top:22px;left:5%;right:5%;height:1px;background:var(--line)}
+.step{position:relative;padding:0 14px;text-align:left}
+.step .dot{width:44px;height:44px;border-radius:50%;background:var(--offwhite);border:1px solid var(--sage);display:grid;place-items:center;font-family:'Manrope',sans-serif;font-weight:800;font-size:.85rem;color:var(--petrol);position:relative;z-index:1;margin-bottom:22px;transition:.3s}
+.step:hover .dot{background:var(--petrol);color:#fff;border-color:var(--petrol)}
+.step h3{font-size:.85rem;letter-spacing:.12em;margin-bottom:8px;font-weight:800}
+.step p{font-size:.93rem;color:#4a585e;line-height:1.55}
+.highlight{margin-top:64px;padding:34px 38px;border:1px solid var(--line);background:var(--white);border-radius:var(--radius);display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between}
+.highlight p{font-family:'Manrope',sans-serif;font-size:clamp(1.1rem,2vw,1.4rem);font-weight:700;color:var(--petrol);max-width:44ch;line-height:1.4}
+
+/* Diferenciais */
+.diff{background:var(--white)}
+.diff-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(36px,6vw,96px)}
+.diff-list{list-style:none}
+.diff-list li{display:grid;grid-template-columns:72px 1fr;gap:12px;padding:30px 0;border-top:1px solid var(--line);transition:padding .3s}
+.diff-list li:last-child{border-bottom:1px solid var(--line)}
+.diff-list li:hover{padding-left:10px}
+.diff-list .num{font-size:1.3rem;font-weight:800;color:var(--sage)}
+.diff-list h3{font-size:1.3rem;margin-bottom:6px}
+.diff-list p{color:#4a585e;font-size:.98rem}
+.diff-sticky{position:sticky;top:110px;align-self:start}
+
+/* Autoridade */
+.auth-box{background:var(--petrol);color:#fff;border-radius:24px;padding:clamp(40px,7vw,88px);display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:center}
+.auth-box h2{color:#fff;max-width:18ch}
+.auth-box .eyebrow{color:#a8c0b8}
+.auth-box p{color:rgba(255,255,255,.82);margin-bottom:16px;max-width:52ch}
+.creds{display:grid;gap:14px}
+.cred{border:1px solid rgba(255,255,255,.18);border-radius:14px;padding:18px 20px;background:rgba(255,255,255,.05)}
+.cred strong{display:block;font-family:'Manrope',sans-serif;font-size:1rem}
+.cred span{font-size:.85rem;color:rgba(255,255,255,.7)}
+
+/* FAQ */
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(36px,6vw,96px)}
+details{border-top:1px solid var(--line);padding:6px 0}
+details:last-of-type{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:20px;align-items:center;padding:22px 0;font-family:'Manrope',sans-serif;font-weight:700;font-size:1.1rem;color:var(--petrol)}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:1.6rem;font-weight:500;color:var(--sage);transition:transform .3s;flex:none}
+details[open] summary::after{transform:rotate(45deg)}
+details p{padding:0 40px 24px 0;color:#4a585e;font-size:.98rem}
+
+/* CTA final */
+.final{background:var(--white);text-align:center}
+.final h2{margin-inline:auto;max-width:22ch}
+.final .lead{margin:0 auto 36px}
+
+/* Footer */
+footer{background:var(--petrol-2);color:rgba(255,255,255,.78);padding:64px 0 100px;font-size:.92rem}
+.foot-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:40px}
+footer h4{font-family:'Manrope',sans-serif;color:#fff;margin-bottom:14px;font-size:1rem}
+footer a:hover{color:#fff;text-decoration:underline}
+.legal{margin-top:44px;padding-top:24px;border-top:1px solid rgba(255,255,255,.12);font-size:.78rem;color:rgba(255,255,255,.55);line-height:1.6}
+
+/* WhatsApp fixo */
+.wa-float{position:fixed;right:20px;bottom:20px;z-index:60;display:flex;align-items:center;gap:10px;background:var(--wa);color:#06361b;padding:15px 22px 15px 18px;border-radius:999px;font-family:'Manrope',sans-serif;font-weight:700;font-size:.9rem;box-shadow:0 10px 28px rgba(37,211,102,.4);transition:transform .25s}
+.wa-float:hover{transform:translateY(-3px) scale(1.02)}
+.wa-float svg{width:26px;height:26px}
+.wa-float::before{content:"";position:absolute;inset:0;border-radius:inherit;border:2px solid var(--wa);animation:pulse 2.6s infinite;opacity:0}
+@keyframes pulse{0%{transform:scale(1);opacity:.6}100%{transform:scale(1.35);opacity:0}}
+
+/* Reveal */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none;transition:none}
+  .wa-float::before{animation:none}
+  *{transition-duration:.01ms!important}
+}
+
+/* Responsivo */
+@media (max-width:1020px){
+  .cards{grid-template-columns:repeat(2,1fr)}
+  .timeline{grid-template-columns:1fr;gap:30px}
+  .timeline::before{top:0;bottom:0;left:22px;right:auto;width:1px;height:auto}
+  .step{display:grid;grid-template-columns:44px 1fr;gap:0 18px;padding:0}
+  .step .dot{grid-row:span 2;margin:0}
+  .step h3{margin-top:10px}
+  .auth-box{grid-template-columns:1fr}
+}
+@media (max-width:860px){
+  :root{--header-h:72px}
+  nav{position:fixed;top:0;right:0;bottom:0;width:min(320px,86vw);background:var(--offwhite);padding:96px 32px 32px;transform:translateX(100%);transition:transform .35s ease;box-shadow:-12px 0 40px rgba(18,59,70,.12);z-index:70}
+  nav.open{transform:none}
+  nav ul{flex-direction:column;gap:6px}
+  nav a{display:block;font-size:1.1rem;padding:14px 0;border-bottom:1px solid var(--line)}
+  .burger{display:block;position:relative;z-index:80}
+  .header-cta{display:none}
+  .hero-grid,.about-grid,.bari-grid,.how-top,.diff-grid,.faq-grid{grid-template-columns:1fr}
+  .hero-photo{order:-1;max-width:460px}
+  .photo{aspect-ratio:4/4.4}
+  .badge.b1{left:12px;bottom:16px}
+  .badge.b2{right:12px;top:14px}
+  .diff-sticky{position:static}
+  .foot-grid{grid-template-columns:1fr}
+  .highlight{padding:26px}
+}
+@media (max-width:560px){
+  body{font-size:16px}
+  section{padding:64px 0}
+  .container{width:min(100% - 28px,1180px)}
+  .hero{padding-top:calc(var(--header-h) + 24px);padding-bottom:64px}
+  .hero-photo{order:-1;max-width:none}
+  .hero h1{font-size:clamp(2.1rem,11vw,3rem)}
+  .badge{padding:10px 12px;font-size:.72rem}
+  .badge.b1{left:8px;bottom:10px}
+  .badge.b2{right:8px;top:10px}
+  .testimonial-grid{grid-template-columns:1fr}
+  .contact-grid{grid-template-columns:1fr}
+  .contact-card{padding:24px}
+  .contact-card .btn{width:100%}
+
+  .cards{grid-template-columns:1fr}
+  .btn{width:100%;padding:18px 20px}
+  .highlight .btn{width:100%}
+  .diff-list li{grid-template-columns:52px 1fr}
+  .wa-float{padding:15px;right:16px;bottom:16px}
+  .wa-float span{display:none}
+  details p{padding-right:0}
+}
+
+/* Depoimentos */
+.testimonials{background:var(--offwhite)}
+.testimonial-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.testimonial{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:34px 30px;box-shadow:var(--shadow);min-height:230px;display:flex;flex-direction:column}
+.quote-mark{font-family:Georgia,serif;font-size:3rem;line-height:.8;color:var(--sage);margin-bottom:20px}
+.testimonial p{font-family:'Manrope',sans-serif;font-size:1.08rem;line-height:1.55;color:var(--petrol);font-weight:600;flex:1}
+.testimonial strong{font-size:.9rem;color:#5b686e;margin-top:24px}
+
+/* Contato */
+.contact{background:var(--white)}
+.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(36px,6vw,96px);align-items:start}
+.contact-card{background:var(--offwhite);border:1px solid var(--line);border-radius:20px;padding:36px;display:grid;gap:26px}
+.contact-card>div{padding-bottom:22px;border-bottom:1px solid var(--line)}
+.contact-card>div:last-of-type{border-bottom:0;padding-bottom:0}
+.contact-label{display:block;font-family:'Manrope',sans-serif;text-transform:uppercase;letter-spacing:.12em;font-size:.72rem;font-weight:800;color:var(--sage);margin-bottom:8px}
+.contact-card p{color:#3d4a50;line-height:1.65}
+.contact-phone{font-family:'Manrope',sans-serif;font-weight:800;color:var(--petrol);text-decoration:underline;text-underline-offset:3px}
+.contact-card .btn{width:fit-content}
+.auth-side{display:grid;gap:16px}
+.auth-photo{aspect-ratio:4/4.6;margin:0}
+.auth-photo img{width:100%;height:100%;object-fit:cover;object-position:center 25%}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="header">
+  <div class="container bar">
+    <a href="#topo" class="brand" aria-label="Dra. Marcela Souza Cruz - início">
+      <strong>Dra. Marcela Souza Cruz</strong>
+      <span>Cirurgia Geral e Bariátrica</span>
+    </a>
+    <nav id="nav" aria-label="Principal">
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#especialidades">Especialidades</a></li>
+        <li><a href="#bariatrica">Bariátrica</a></li>
+        <li><a href="#diferenciais">Diferenciais</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-petrol header-cta wa-link" data-msg="Olá! Gostaria de agendar uma avaliação com a Dra. Marcela." href="#">Agendar avaliação</a>
+    <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav"><span></span></button>
+  </div>
+</header>
+
+<main id="topo">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="reveal">
+      <span class="eyebrow">Cirurgia Geral e Bariátrica</span>
+      <h1>Cuidar da sua saúde começa por entender o seu caso.</h1>
+      <p class="sub">Nem toda pessoa precisa do mesmo tratamento. Por isso, cada decisão é precedida por uma avaliação cuidadosa, considerando seu histórico, suas condições de saúde e suas necessidades.</p>
+      <div class="doc-id">
+        <strong>Dra. Marcela Souza Cruz</strong>
+        <span>Cirurgiã Geral e Bariátrica</span>
+        <span>CRM 52.97698-9 | RQE 34499</span>
+      </div>
+      <a class="btn btn-wa wa-link" data-msg="Olá! Gostaria de agendar uma avaliação com a Dra. Marcela." href="#">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-wa"/></svg>
+        Agendar avaliação pelo WhatsApp
+      </a>
+      <p class="cta-note">Converse com nossa equipe e saiba como funciona o atendimento.</p>
+    </div>
+    <div class="hero-photo reveal">
+      <div class="photo">
+        <div class="ph">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+          Foto da Dra. Marcela
+          <small>Adicione assets/dra-marcela-hero.png</small>
+        </div>
+        <img src="assets/dra-marcela-hero.png" alt="Dra. Marcela Souza Cruz, cirurgiã geral e bariátrica" fetchpriority="high" onerror="this.style.display='none'">
+      </div>
+      <div class="badge b1"><strong>CRM | RQE</strong>Registro profissional</div>
+      <div class="badge b2"><strong>Cirurgia Geral</strong><strong>Cirurgia Bariátrica</strong></div>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section class="about" id="sobre">
+  <div class="container about-grid">
+    <div class="photo reveal">
+      <div class="ph">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+        Foto da Dra. Marcela
+        <small>Adicione assets/dra-marcela-sobre.png</small>
+      </div>
+      <img src="assets/dra-marcela-sobre.png" alt="Dra. Marcela Souza Cruz em atendimento" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="reveal">
+      <span class="eyebrow">Sobre</span>
+      <h2>Mais do que realizar procedimentos, acompanhar pessoas.</h2>
+      <p class="key">Uma cirurgia é uma decisão importante e, para muitas pessoas, pode envolver dúvidas, inseguranças e expectativas.</p>
+      <p><strong>Por isso, o atendimento começa antes de qualquer procedimento.</strong></p>
+      <p>Na consulta, o objetivo é compreender o momento de saúde de cada paciente, analisar seu histórico, identificar suas necessidades e explicar de forma clara quais possibilidades de tratamento podem ser consideradas.</p>
+      <p>Na Cirurgia Bariátrica, por exemplo, a indicação não deve ser baseada apenas no desejo de perder peso. É necessário avaliar o estado geral de saúde, condições associadas à obesidade, histórico clínico e outros fatores que podem influenciar a decisão.</p>
+      <p>Na Cirurgia Geral, da mesma forma, cada procedimento possui suas próprias indicações, riscos e particularidades.</p>
+      <p>O compromisso é oferecer uma medicina baseada em avaliação individualizada, informação clara e acompanhamento responsável, para que o paciente possa tomar decisões com mais segurança e consciência.</p>
+      <a class="btn btn-ghost wa-link" data-msg="Olá! Gostaria de conhecer melhor a Dra. Marcela e o atendimento." href="#">Conhecer a Dra. Marcela Souza Cruz</a>
+    </div>
+  </div>
+</section>
+
+<!-- ESPECIALIDADES -->
+<section id="especialidades">
+  <div class="container">
+    <div class="spec-head reveal">
+      <span class="eyebrow">Especialidades</span>
+      <h2>Tratamentos pensados para diferentes necessidades.</h2>
+      <p class="lead">A atuação em Cirurgia Geral e Bariátrica permite avaliar diferentes condições que podem necessitar de tratamento cirúrgico.</p>
+    </div>
+    <div class="cards">
+      <article class="card reveal">
+        <div class="ico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 6c9 0 16 6 16 15 0 6-3 9-6 12-2 2-3 4-3 9H21c0-5-1-7-3-9-3-3-6-6-6-12 0-9 6-15 12-15z"/><path d="M18 24c2 3 10 3 12 0"/></svg></div>
+        <h3>Cirurgia Bariátrica</h3>
+        <p>Para pacientes com obesidade que apresentam indicação para o tratamento cirúrgico, após avaliação médica individualizada.</p>
+        <a class="wa-link" data-msg="Olá! Gostaria de avaliar se a cirurgia bariátrica é indicada para mim." href="#">Avaliar se a bariátrica é indicada <span>→</span></a>
+      </article>
+      <article class="card reveal">
+        <div class="ico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 8v32M8 24h32"/><circle cx="24" cy="24" r="17"/></svg></div>
+        <h3>Cirurgia Geral</h3>
+        <p>Avaliação e tratamento de condições que podem necessitar de intervenção cirúrgica, considerando o diagnóstico e as particularidades de cada paciente.</p>
+        <a class="wa-link" data-msg="Olá! Gostaria de agendar uma avaliação de Cirurgia Geral." href="#">Agendar avaliação <span>→</span></a>
+      </article>
+      <article class="card reveal">
+        <div class="ico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 30c4-10 12-14 16-14s12 4 16 14"/><circle cx="24" cy="30" r="5"/><path d="M12 40h24"/></svg></div>
+        <h3>Cirurgia de Hérnias</h3>
+        <p>Avaliação de hérnias e definição da abordagem de tratamento de acordo com as características de cada caso.</p>
+        <a class="wa-link" data-msg="Olá! Gostaria de avaliar meu caso de hérnia." href="#">Quero avaliar meu caso <span>→</span></a>
+      </article>
+      <article class="card reveal">
+        <div class="ico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M30 8c-6 0-10 4-10 10 0 5-8 6-8 14 0 6 5 10 11 10 8 0 15-8 15-18 0-9-3-16-8-16z"/><path d="M22 36c2-5 6-8 10-9"/></svg></div>
+        <h3>Cirurgia da Vesícula</h3>
+        <p>Avaliação e tratamento cirúrgico de alterações da vesícula biliar quando existe indicação para o procedimento.</p>
+        <a class="wa-link" data-msg="Olá! Gostaria de falar com a equipe sobre cirurgia da vesícula." href="#">Falar com a equipe <span>→</span></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- BARIÁTRICA -->
+<section class="bari" id="bariatrica">
+  <div class="container bari-grid">
+    <div class="reveal">
+      <span class="eyebrow">Cirurgia Bariátrica</span>
+      <h2>Quando a cirurgia pode fazer parte do tratamento da obesidade.</h2>
+      <p>A obesidade é uma condição de saúde complexa e pode estar associada a diferentes doenças e limitações que afetam a rotina e a qualidade de vida.</p>
+      <p>Em determinados pacientes, a cirurgia bariátrica pode fazer parte do tratamento.</p>
+      <p>Mas chegar a essa decisão exige mais do que conhecer os procedimentos disponíveis.</p>
+      <p>É necessário avaliar o histórico do paciente, seu estado de saúde, condições associadas, tratamentos anteriores, expectativas e critérios médicos para indicação.</p>
+      <div class="quote">A primeira conversa não é sobre qual cirurgia você vai fazer. É sobre entender se a cirurgia é realmente indicada para você.</div>
+      <a class="btn btn-wa wa-link" data-msg="Olá! Quero saber se a cirurgia bariátrica é uma opção para mim." href="#">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-wa"/></svg>
+        Quero saber se a bariátrica é uma opção para mim
+      </a>
+    </div>
+    <div class="photo reveal">
+      <div class="ph">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="m21 16-5-5-9 9"/></svg>
+        Foto de consulta médica
+        <small>Adicione assets/dra-marcela-bariatrica.png</small>
+      </div>
+      <img src="assets/dra-marcela-bariatrica.png" alt="Consulta médica de avaliação" loading="lazy" onerror="this.style.display='none'">
+    </div>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section id="como-funciona">
+  <div class="container">
+    <div class="how-top">
+      <div class="reveal">
+        <span class="eyebrow">Como funciona</span>
+        <h2>Você não precisa chegar à consulta sabendo exatamente o que precisa.</h2>
+      </div>
+      <div class="reveal">
+        <p class="lead">É comum o paciente chegar ao consultório com dúvidas.</p>
+        <ul class="questions">
+          <li>“Será que preciso de cirurgia?”</li>
+          <li>“Será que a bariátrica é indicada para mim?”</li>
+          <li>“Qual procedimento seria mais adequado?”</li>
+          <li>“Como funciona a recuperação?”</li>
+        </ul>
+        <p class="lead"><strong>A consulta existe justamente para responder essas perguntas.</strong></p>
+      </div>
+    </div>
+
+    <div class="timeline">
+      <div class="step reveal"><div class="dot">01</div><h3>CONTATO</h3><p>Fale com nossa equipe pelo WhatsApp.</p></div>
+      <div class="step reveal"><div class="dot">02</div><h3>AVALIAÇÃO</h3><p>Seu histórico e suas condições de saúde são avaliados.</p></div>
+      <div class="step reveal"><div class="dot">03</div><h3>INVESTIGAÇÃO</h3><p>Quando necessário, exames complementares são solicitados.</p></div>
+      <div class="step reveal"><div class="dot">04</div><h3>CONDUTA</h3><p>As possibilidades de tratamento são discutidas.</p></div>
+      <div class="step reveal"><div class="dot">05</div><h3>ACOMPANHAMENTO</h3><p>O paciente recebe orientação durante as próximas etapas.</p></div>
+    </div>
+
+    <div class="highlight reveal">
+      <p>O objetivo é indicar o que é adequado para o paciente, não simplesmente indicar uma cirurgia.</p>
+      <a class="btn btn-wa wa-link" data-msg="Olá! Gostaria de agendar minha avaliação." href="#">Agendar minha avaliação</a>
+    </div>
+  </div>
+</section>
+
+<!-- DIFERENCIAIS -->
+<section class="diff" id="diferenciais">
+  <div class="container diff-grid">
+    <div class="diff-sticky reveal">
+      <span class="eyebrow">Diferenciais</span>
+      <h2>Um atendimento que coloca a decisão médica no centro.</h2>
+    </div>
+    <ol class="diff-list">
+      <li class="reveal"><span class="num">01</span><div><h3>Avaliação individualizada</h3><p>Cada paciente possui uma história diferente. Cada avaliação considera suas características e necessidades.</p></div></li>
+      <li class="reveal"><span class="num">02</span><div><h3>Informação clara</h3><p>O paciente precisa compreender as possibilidades antes de tomar uma decisão.</p></div></li>
+      <li class="reveal"><span class="num">03</span><div><h3>Acompanhamento</h3><p>O cuidado continua além do procedimento.</p></div></li>
+      <li class="reveal"><span class="num">04</span><div><h3>Decisão responsável</h3><p>A cirurgia é considerada quando existe indicação médica.</p></div></li>
+      <li class="reveal"><span class="num">05</span><div><h3>Atendimento próximo</h3><p>Um espaço para tirar dúvidas e compreender cada etapa do tratamento.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- AUTORIDADE -->
+<section id="autoridade">
+  <div class="container">
+    <div class="auth-box reveal">
+      <div>
+        <span class="eyebrow">Autoridade</span>
+        <h2>Experiência para conduzir decisões que exigem responsabilidade.</h2>
+        <p>A cirurgia exige precisão técnica, planejamento e uma avaliação criteriosa.</p>
+        <p>Olá, me chamo Marcela Souza Cruz. Sou graduada em Medicina pelo Centro Universitário de Volta Redonda (2013), com residência médica em Cirurgia Geral pelo Hospital São João Batista, em Volta Redonda/RJ (2017), e pós-graduação em Cirurgia Bariátrica e Metabólica pela Universidade do Grande Rio, no Rio de Janeiro (2018).</p>
+        <p>Sou membro cirurgião associado da Sociedade Brasileira de Cirurgia Bariátrica e Metabólica e membro da IFSO (International Federation for the Surgery of Obesity and Metabolic Disorders).</p>
+        <p>Busco estar sempre atualizada para oferecer o melhor tratamento e abordagem aos pacientes. Seja bem-vindo(a).</p>
+        <a class="btn btn-wa wa-link" data-msg="Olá! Gostaria de agendar uma avaliação com a Dra. Marcela." href="#">Agendar avaliação</a>
+      </div>
+      <div class="auth-side">
+        <div class="photo auth-photo">
+          <img src="assets/dra-marcela-autoridade.png" alt="Dra. Marcela Souza Cruz, cirurgiã geral e bariátrica" loading="lazy">
+        </div>
+        <div class="creds">
+          <div class="cred"><strong>CRM 52.97698-9</strong><span>Registro profissional</span></div>
+          <div class="cred"><strong>RQE 34499</strong><span>Registro de Qualificação de Especialista</span></div>
+          <div class="cred"><strong>Cirurgia Geral e Bariátrica</strong><span>Áreas de atuação</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section class="testimonials" id="depoimentos">
+  <div class="container">
+    <div class="spec-head reveal">
+      <span class="eyebrow">Depoimentos</span>
+      <h2>Experiências de pacientes.</h2>
+      <p class="lead">Relatos de pacientes sobre suas experiências de cuidado e acompanhamento.</p>
+    </div>
+    <div class="testimonial-grid">
+      <article class="testimonial reveal">
+        <div class="quote-mark">“</div>
+        <p>Enfim estou realizando meu sonho, com saúde, graças à ajuda dela.</p>
+        <strong>Laina Almeida</strong>
+      </article>
+      <article class="testimonial reveal">
+        <div class="quote-mark">“</div>
+        <p>Agradeço a Deus por ter me colocado nas mãos de uma médica tão competente.</p>
+        <strong>Carol</strong>
+      </article>
+      <article class="testimonial reveal">
+        <div class="quote-mark">“</div>
+        <p>Inclusive com contato no pós-operatório em casa feito pela Dra.</p>
+        <strong>Cris Menezes</strong>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" style="padding-top:0">
+  <div class="container faq-grid">
+    <div class="reveal">
+      <span class="eyebrow">FAQ</span>
+      <h2>Dúvidas frequentes.</h2>
+      <p class="lead">Não encontrou sua resposta? Fale com nossa equipe pelo WhatsApp.</p>
+    </div>
+    <div class="reveal">
+      <details>
+        <summary>Como funciona a primeira consulta?</summary>
+        <p>Na primeira consulta, a médica avalia seu histórico e suas condições de saúde, esclarece suas dúvidas e explica quais possibilidades de tratamento podem ser consideradas. Quando necessário, exames complementares são solicitados.</p>
+      </details>
+      <details>
+        <summary>Preciso já ter certeza de que quero fazer cirurgia?</summary>
+        <p>Não. A consulta existe justamente para esclarecer se a cirurgia é ou não indicada para o seu caso.</p>
+      </details>
+      <details>
+        <summary>Toda pessoa com obesidade pode fazer cirurgia bariátrica?</summary>
+        <p>Não. A indicação depende de critérios médicos, como estado geral de saúde, condições associadas, histórico clínico e tratamentos anteriores. Por isso, a avaliação é individualizada.</p>
+      </details>
+      <details>
+        <summary>Quais condições são avaliadas em Cirurgia Geral?</summary>
+        <p>Entre elas, hérnias e alterações da vesícula biliar, além de outras condições que podem necessitar de intervenção cirúrgica, avaliadas caso a caso.</p>
+      </details>
+      <details>
+        <summary>Como agendo minha avaliação?</summary>
+        <p>Basta clicar em qualquer botão de WhatsApp desta página e conversar com nossa equipe, que explicará como funciona o atendimento e os horários disponíveis.</p>
+      </details>
+      <details>
+        <summary>Vocês atendem convênios?</summary>
+        <p>Entre em contato pelo WhatsApp para consultar as condições de atendimento e a cobertura do seu plano.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="final">
+  <div class="container reveal">
+    <span class="eyebrow">Próximo passo</span>
+    <h2>Dê o primeiro passo com tranquilidade.</h2>
+    <p class="lead">Converse com nossa equipe, tire suas dúvidas e entenda como funciona o atendimento.</p>
+    <a class="btn btn-wa wa-link" data-msg="Olá! Gostaria de agendar uma avaliação com a Dra. Marcela." href="#">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-wa"/></svg>
+      Agendar avaliação pelo WhatsApp
+    </a>
+  </div>
+</section>
+
+</main>
+
+<!-- CONTATO / LOCAL -->
+<section class="contact" id="contato">
+  <div class="container contact-grid">
+    <div class="reveal">
+      <span class="eyebrow">Atendimento</span>
+      <h2>Onde você será atendido.</h2>
+      <p class="lead">Consulte nossa equipe pelo WhatsApp para confirmar horários disponíveis e agendar sua avaliação.</p>
+    </div>
+    <div class="contact-card reveal">
+      <div>
+        <span class="contact-label">Endereço</span>
+        <p>Rod. dos Metalúrgicos, 2490 - Sl 01<br>Casa de Pedra, Volta Redonda - RJ<br>27258-000</p>
+      </div>
+      <div>
+        <span class="contact-label">WhatsApp</span>
+        <p><a class="wa-link contact-phone" data-msg="Olá! Gostaria de agendar uma avaliação com a Dra. Marcela." href="#">(24) 99298-8987</a></p>
+      </div>
+      <div>
+        <span class="contact-label">Horários</span>
+        <p>Consulte a equipe pelo WhatsApp para informações sobre os horários de atendimento.</p>
+      </div>
+      <a class="btn btn-wa wa-link" data-msg="Olá! Gostaria de agendar uma avaliação com a Dra. Marcela." href="#">Falar pelo WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <h4>Dra. Marcela Souza Cruz</h4>
+        <p>Cirurgia Geral e Bariátrica<br>CRM 52.97698-9 | RQE 34499</p>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <p>Rod. dos Metalúrgicos, 2490 - Sl 01<br>Casa de Pedra, Volta Redonda - RJ<br>
+        <a class="wa-link" data-msg="Olá! Gostaria de agendar uma avaliação com a Dra. Marcela." href="#">(24) 99298-8987</a></p>
+      </div>
+      <div>
+        <h4>Redes</h4>
+        <p><a href="https://instagram.com/dramarcelasouzacruz" target="_blank" rel="noopener">@dramarcelasouzacruz</a></p>
+      </div>
+    </div>
+    <p class="legal">Este site tem caráter informativo e não substitui a consulta ou avaliação médica individualizada. A indicação de tratamentos e procedimentos depende de avaliação profissional.</p>
+  </div>
+</footer>
+
+<a class="wa-float wa-link" data-msg="Olá! Gostaria de agendar uma avaliação com a Dra. Marcela." href="#" aria-label="Falar pelo WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-wa"/></svg>
+  <span>WhatsApp</span>
+</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-wa" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24s8.24 3.7 8.24 8.24-3.7 8.24-8.24 8.24zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.23-.16-.48-.28z"/></symbol>
+</svg>
+
+<script>
+(function(){
+  // Número do WhatsApp (DDI + DDD + número, só dígitos)
+  var WHATSAPP = "5524992988987";
+
+  // Links de WhatsApp
+  document.querySelectorAll('.wa-link').forEach(function(a){
+    var msg = a.dataset.msg || "Olá! Gostaria de agendar uma avaliação.";
+    a.href = "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(msg);
+    a.target = "_blank";
+    a.rel = "noopener";
+  });
+
+  // Header reduz no scroll
+  var header = document.getElementById('header');
+  function onScroll(){ header.classList.toggle('scrolled', window.scrollY > 24); }
+  onScroll();
+  window.addEventListener('scroll', onScroll, {passive:true});
+
+  // Menu mobile
+  var burger = document.getElementById('burger'), nav = document.getElementById('nav');
+  function setMenu(open){
+    nav.classList.toggle('open', open);
+    burger.setAttribute('aria-expanded', open);
+    burger.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
+  }
+  burger.addEventListener('click', function(){ setMenu(!nav.classList.contains('open')); });
+  nav.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', function(){ setMenu(false); }); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') setMenu(false); });
+
+  // Animações de entrada
+  var els = document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); }
+      });
+    }, {threshold:.12, rootMargin:'0px 0px -40px 0px'});
+    els.forEach(function(el, i){ el.style.transitionDelay = (i % 4) * 70 + 'ms'; io.observe(el); });
+  } else {
+    els.forEach(function(el){ el.classList.add('in'); });
+  }
+})();
+</script>
+</body>
+</html>
